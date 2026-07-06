@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>集客のミカタ|新宮町のWEB集客パートナー(MEO対策・ホームページ制作)</title>
+<meta name="description" content="福岡県糟屋郡新宮町の中小企業・店舗専門のWEB集客サービス。Googleマップ対策(MEO)は月額1.5万円から、ホームページ制作は先着3社モニター価格15万円。押し売りは一切しません。まずは無料のWEB集客診断から。">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:site_name" content="集客のミカタ">
+<meta property="og:title" content="集客のミカタ|新宮町のWEB集客パートナー">
+<meta property="og:description" content="派手な提案は、しません。効く集客だけ、地元の値段で。新宮町の中小企業・店舗のためのMEO対策・ホームページ制作。無料のWEB集客診断受付中。">
+<meta property="og:url" content="https://mizuki-0804.github.io/mikata-site/">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%23b5492a'/%3E%3Ctext x='32' y='46' font-family='serif' font-size='40' font-weight='bold' text-anchor='middle' fill='%23f6f3ec'%3Eミ%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "集客のミカタ",
+  "description": "福岡県糟屋郡新宮町の中小企業・店舗専門のWEB集客サービス(MEO対策・ホームページ制作・運用代行)",
+  "areaServed": ["福岡県糟屋郡新宮町", "福岡県糟屋郡粕屋町", "福岡県糟屋郡久山町", "福岡県古賀市", "福岡県福津市"],
+  "priceRange": "月額15,000円〜",
+  "url": "https://mizuki-0804.github.io/mikata-site/",
+  "email": "mikata@jixaijp.com",
+  "founder": { "@type": "Person", "name": "河野瑞輝" }
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@500;600;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #26251f;
+    --ink-soft: #55534a;
+    --paper: #f6f3ec;
+    --paper-deep: #efeade;
+    --line: #d9d2c0;
+    --green: #274a3a;
+    --green-deep: #1c3a2d;
+    --shu: #b5492a;      /* 朱色: ここぞの一点だけ */
+    --shu-deep: #9c3a1e;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", sans-serif;
+    background: var(--paper); color: var(--ink);
+    font-size: 15.5px; line-height: 2.0; letter-spacing: .02em;
+    -webkit-font-smoothing: antialiased;
+  }
+  .mincho { font-family: "Shippori Mincho", "Hiragino Mincho ProN", serif; }
+  a { color: inherit; }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+  section { padding: 72px 0; }
+  @media (min-width: 800px) { section { padding: 104px 0; } }
+
+  /* 見出しの作法: 番号+罫線。バッジは使わない */
+  .label {
+    display: flex; align-items: baseline; gap: 14px;
+    font-size: 13px; letter-spacing: .22em; color: var(--green);
+    font-weight: 700; margin-bottom: 28px;
+  }
+  .label::before { content: attr(data-no); font-family: "Shippori Mincho", serif; font-size: 15px; }
+  .label::after { content: ""; flex: 1; height: 1px; background: var(--line); transform: translateY(-4px); }
+  h2 {
+    font-family: "Shippori Mincho", serif; font-weight: 800;
+    font-size: 27px; line-height: 1.7; letter-spacing: .04em; margin-bottom: 28px;
+  }
+  @media (min-width: 800px) { h2 { font-size: 34px; } }
+
+  .btn {
+    display: inline-block; text-decoration: none; text-align: center;
+    font-weight: 700; padding: 15px 30px; font-size: 15px;
+    transition: background .15s ease, color .15s ease;
+  }
+  .btn-shu { background: var(--shu); color: #fff; }
+  .btn-shu:hover { background: var(--shu-deep); }
+  .btn-line { border: 1.5px solid var(--ink); color: var(--ink); }
+  .btn-line:hover { background: var(--ink); color: var(--paper); }
+
+  /* ヘッダー */
+  header {
+    position: sticky; top: 0; z-index: 50;
+    background: color-mix(in srgb, var(--paper) 94%, transparent);
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav { display: flex; align-items: center; justify-content: space-between; height: 62px; }
+  .brand { text-decoration: none; display: flex; align-items: baseline; gap: 10px; }
+  .brand b { font-family: "Shippori Mincho", serif; font-size: 19px; letter-spacing: .06em; }
+  .brand span { font-size: 11px; color: var(--ink-soft); letter-spacing: .08em; }
+  @media (max-width: 520px) { .brand span { display: none; } }
+  .nav .btn { padding: 9px 18px; font-size: 13px; }
+
+  /* ヒーロー: 左寄せ・縦書きアクセント */
+  .hero { padding: 84px 0 72px; border-bottom: 1px solid var(--line); position: relative; overflow: hidden; }
+  .hero-inner { display: flex; gap: 40px; align-items: flex-start; }
+  .hero-main { max-width: 620px; }
+  .hero .over {
+    font-size: 13px; letter-spacing: .2em; color: var(--green);
+    font-weight: 700; margin-bottom: 22px;
+  }
+  .hero h1 {
+    font-family: "Shippori Mincho", serif; font-weight: 800;
+    font-size: 34px; line-height: 1.75; letter-spacing: .03em;
+    margin-bottom: 26px;
+  }
+  @media (min-width: 800px) { .hero h1 { font-size: 46px; line-height: 1.65; } }
+  .hero h1 em { font-style: normal; color: var(--shu); }
+  .hero p.lead { color: var(--ink-soft); max-width: 520px; margin-bottom: 34px; }
+  .hero .cta { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+  .hero .cta small { display: block; width: 100%; color: var(--ink-soft); font-size: 12.5px; margin-top: 6px; }
+  .tate {
+    display: none; writing-mode: vertical-rl; font-family: "Shippori Mincho", serif;
+    font-size: 15px; letter-spacing: .5em; color: var(--green);
+    border-left: 1px solid var(--line); padding-left: 22px;
+    margin-left: auto; height: 380px;
+  }
+  @media (min-width: 900px) { .tate { display: block; } }
+  .hero-foot { display: flex; flex-wrap: wrap; gap: 8px 36px; margin-top: 56px; font-size: 13px; color: var(--ink-soft); }
+  .hero-foot b { color: var(--ink); font-weight: 700; }
+
+  /* ご挨拶 */
+  .aisatsu { border-bottom: 1px solid var(--line); }
+  .aisatsu-grid { display: grid; gap: 36px; }
+  @media (min-width: 800px) { .aisatsu-grid { grid-template-columns: 260px 1fr; gap: 56px; } }
+  .daihyo {
+    width: 100%; max-width: 260px; display: block;
+    border: 1px solid var(--line); padding: 6px; background: #fff;
+  }
+  .aisatsu .name { margin-top: 14px; font-size: 13px; color: var(--ink-soft); }
+  .aisatsu .name b { font-family: "Shippori Mincho", serif; font-size: 17px; color: var(--ink); margin-right: 8px; }
+  .aisatsu-text p + p { margin-top: 1.4em; }
+  .aisatsu-text .honne {
+    font-family: "Shippori Mincho", serif; font-size: 19px; font-weight: 600; line-height: 2;
+    border-left: 3px solid var(--shu); padding-left: 18px; margin: 1.8em 0;
+  }
+
+  /* お悩み: カードではなく声 */
+  .koe-list { display: grid; gap: 18px; max-width: 720px; margin: 0 auto; }
+  .koe {
+    padding: 26px 24px; background: #fff; border: 1px solid var(--line);
+    text-align: center;
+  }
+  .koe p {
+    font-family: "Shippori Mincho", serif; font-size: 17px; font-weight: 600;
+    font-feature-settings: "halt" 1; line-height: 1.9;
+  }
+  .koe small { display: block; font-family: "Noto Sans JP", sans-serif; font-weight: 400; font-size: 12.5px; color: var(--ink-soft); margin-top: 8px; }
+  .koe-close { margin: 36px auto 0; max-width: 720px; }
+
+  /* サービス: 番号つき編集レイアウト */
+  .svc { border-top: 1px solid var(--line); padding: 44px 0; display: grid; gap: 20px; }
+  .svc:last-of-type { border-bottom: 1px solid var(--line); }
+  @media (min-width: 800px) { .svc { grid-template-columns: 90px 1fr 240px; gap: 36px; } }
+  .svc .no { font-family: "Shippori Mincho", serif; font-size: 30px; color: var(--line); font-weight: 500; line-height: 1; }
+  .svc h3 { font-family: "Shippori Mincho", serif; font-size: 21px; font-weight: 800; margin-bottom: 12px; }
+  .svc .body p { color: var(--ink-soft); font-size: 14.5px; }
+  .svc .body .teki { font-size: 13px; margin-top: 14px; color: var(--green); font-weight: 700; }
+  .svc .price { border-left: 1px solid var(--line); padding-left: 24px; }
+  @media (max-width: 799px) { .svc .price { border-left: none; padding-left: 0; } }
+  .svc .price dt { font-size: 12px; color: var(--ink-soft); letter-spacing: .1em; }
+  .svc .price dd { font-family: "Shippori Mincho", serif; font-size: 24px; font-weight: 800; margin-bottom: 10px; }
+  .svc .price dd small { font-size: 12px; font-family: "Noto Sans JP", sans-serif; font-weight: 400; color: var(--ink-soft); }
+
+  /* モニター: 二重罫の枠 */
+  .monitor-box {
+    border: 1px solid var(--green); outline: 1px solid var(--green); outline-offset: 4px;
+    background: #fff; padding: 48px 28px; text-align: center; max-width: 760px; margin: 0 auto;
+  }
+  @media (min-width: 800px) { .monitor-box { padding: 64px 64px; } }
+  .monitor-box .han {
+    display: inline-block; font-family: "Shippori Mincho", serif; font-weight: 800;
+    color: var(--shu); border: 2px solid var(--shu); padding: 4px 14px;
+    font-size: 14px; letter-spacing: .2em; margin-bottom: 24px;
+  }
+  .monitor-box h2 { margin-bottom: 18px; }
+  .monitor-box .kakaku { font-family: "Shippori Mincho", serif; font-size: 20px; margin: 18px 0 6px; }
+  .monitor-box .kakaku s { color: var(--ink-soft); font-weight: 400; margin-right: 10px; }
+  .monitor-box .kakaku b { font-size: 42px; color: var(--shu); font-weight: 800; }
+  .monitor-box .joken { font-size: 13px; color: var(--ink-soft); max-width: 480px; margin: 0 auto 32px; }
+
+  /* 流れ: 縦のタイムライン */
+  .steps { max-width: 640px; }
+  .step { display: grid; grid-template-columns: 56px 1fr; gap: 20px; padding: 26px 0; border-bottom: 1px dashed var(--line); }
+  .step .n { font-family: "Shippori Mincho", serif; font-size: 26px; color: var(--green); font-weight: 600; line-height: 1.3; }
+  .step h3 { font-size: 16px; font-weight: 700; margin-bottom: 4px; }
+  .step p { font-size: 14px; color: var(--ink-soft); }
+
+  /* FAQ */
+  .faq details { border-bottom: 1px solid var(--line); padding: 20px 4px; max-width: 760px; }
+  .faq details:first-of-type { border-top: 1px solid var(--line); }
+  .faq summary {
+    font-weight: 700; cursor: pointer; list-style: none;
+    display: flex; gap: 14px; align-items: baseline;
+  }
+  .faq summary::-webkit-details-marker { display: none; }
+  .faq summary::before { content: "問"; font-family: "Shippori Mincho", serif; color: var(--shu); flex-shrink: 0; }
+  .faq details p { margin-top: 12px; font-size: 14.5px; color: var(--ink-soft); display: flex; gap: 14px; }
+  .faq details p::before { content: "答"; font-family: "Shippori Mincho", serif; color: var(--green); flex-shrink: 0; }
+
+  /* 診断CTA */
+  .shindan { background: var(--green-deep); color: #f2efe6; }
+  .shindan .label { color: #c9d6c5; }
+  .shindan .label::after { background: #3d5a4b; }
+  .shindan h2 { color: #fff; }
+  .shindan p.lead { color: #c9d6c5; max-width: 620px; margin-bottom: 36px; font-size: 14.5px; }
+  .shindan .cta { display: flex; flex-wrap: wrap; gap: 12px; }
+  .shindan .btn-line { border-color: #f2efe6; color: #f2efe6; }
+  .shindan .btn-line:hover { background: #f2efe6; color: var(--green-deep); }
+  .shindan .naiyou { margin: 28px 0 0; font-size: 13px; color: #c9d6c5; }
+
+  footer { padding: 44px 0 60px; font-size: 13px; color: var(--ink-soft); }
+  footer .brand b { font-size: 17px; }
+  footer p { margin-top: 10px; }
+
+  .reveal { opacity: 0; transform: translateY(14px); transition: opacity .7s ease, transform .7s ease; }
+  .reveal.on { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#"><b>集客のミカタ</b><span>新宮町のWEB集客パートナー</span></a>
+    <a class="btn btn-shu" href="#shindan">無料診断</a>
+  </div>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="wrap hero-inner">
+    <div class="hero-main">
+      <p class="over">福岡県糟屋郡新宮町 ・ WEB集客の相談所</p>
+      <h1>派手な提案は、<br>しません。<br><em>効く集客だけ</em>、<br>地元の値段で。</h1>
+      <p class="lead">ホームページ、Googleマップ、SNS。「何かやらなきゃ」と思いながら後回しになっている新宮町の商売人のために、本当に必要なものだけを選んでお手伝いする仕事をしています。</p>
+      <div class="cta">
+        <a class="btn btn-shu" href="#shindan">無料のWEB集客診断を受ける</a>
+        <a class="btn btn-line" href="#ryokin">料金を見る</a>
+        <small>診断は15分で読めるレポートをお送りするだけ。営業の電話はかけません。</small>
+      </div>
+      <div class="hero-foot">
+        <div>対応地域 <b>新宮町・粕屋郡・古賀・福津</b></div>
+        <div>月額 <b>1.5万円から</b></div>
+        <div>相談・診断 <b>無料</b></div>
+      </div>
+    </div>
+    <div class="tate">新宮町のWEB集客パートナー</div>
+  </div>
+</section>
+
+<section class="aisatsu">
+  <div class="wrap">
+    <p class="label" data-no="壱">ご挨拶</p>
+    <div class="aisatsu-grid">
+      <div>
+        <img class="daihyo" src="daihyo.jpg" alt="集客のミカタ 代表 河野瑞輝" width="500" height="500">
+        <p class="name"><b>河野瑞輝</b>集客のミカタ 代表</p>
+      </div>
+      <div class="aisatsu-text reveal">
+        <p>はじめまして。新宮町でWEB集客のお手伝いをしている河野瑞輝と申します。</p>
+        <p class="honne">先に正直にお伝えします。<br>この事業は、始めたばかりです。</p>
+        <p>だから今は、実績づくりの期間として通常の半額以下でお受けしています。安いのには、そういう理由があります。そのかわり、大手の下請けに流すような仕事は一切しません。ご相談から制作、毎月の報告まで、全部私が顔の見える形で担当します。</p>
+        <p>「WEBはよくわからないから」と損をしている地元のお店を、一軒でも減らしたい。わからないことを、わかる言葉で。それがこの仕事を始めた理由です。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="label" data-no="弐">よくいただく相談</p>
+    <h2>その悩み、<br>だいたい聞いたことがあります。</h2>
+    <div class="koe-list">
+      <div class="koe reveal"><p>「ホームページ、10年前に作ったきり触ってない」</p><small>スマホで見ると崩れている。直し方も頼み先もわからない</small></div>
+      <div class="koe reveal"><p>「Googleマップに自分の店がまともに出てこない」</p><small>写真は他人が撮ったもの1枚。口コミも返信できていない</small></div>
+      <div class="koe reveal"><p>「業者に相談したら、月10万円のプランを勧められた」</p><small>それが高いのか妥当なのかも、判断がつかない</small></div>
+    </div>
+    <p class="koe-close reveal">全部やる必要はありません。お店の状況によって、効く順番が違うだけです。診断で現状を見て、<strong>順番と値段を先に</strong>お伝えします。</p>
+  </div>
+</section>
+
+<section id="ryokin">
+  <div class="wrap">
+    <p class="label" data-no="参">サービスと料金</p>
+    <h2>値段は先に、全部書いておきます。</h2>
+
+    <div class="svc reveal">
+      <div class="no">01</div>
+      <div class="body">
+        <h3>Googleマップ対策(MEO)</h3>
+        <p>「新宮 ランチ」「新宮町 美容室」のように探すお客様に見つけてもらうための整備です。プロフィールの作り込み、週1回の投稿、口コミ返信の下書きまで代行し、毎月「調べた人が何人いたか」を報告します。</p>
+        <p class="teki">向いているお店:飲食・美容・治療院・教室など、地図で探される商売</p>
+      </div>
+      <dl class="price">
+        <dt>初期</dt><dd>3万円<small>(税別)</small></dd>
+        <dt>月額</dt><dd>1.5万円<small>(税別)</small></dd>
+      </dl>
+    </div>
+
+    <div class="svc reveal">
+      <div class="no">02</div>
+      <div class="body">
+        <h3>ホームページ制作</h3>
+        <p>飾りではなく、問い合わせを生むための道具として作ります。スマホ最優先、「地域名×業種」の検索対策、電話・LINEへの導線設計まで込み。公開後の保守は月1万円からです。</p>
+        <p class="teki">向いている方:信頼される「会社の顔」が必要な事業者、紙のパンフをやめたい方</p>
+      </div>
+      <dl class="price">
+        <dt>制作費(5ページ)</dt><dd>35万円<small>〜(税別)</small></dd>
+        <dt>保守</dt><dd>月1万円<small>〜(税別)</small></dd>
+      </dl>
+    </div>
+
+    <div class="svc reveal">
+      <div class="no">03</div>
+      <div class="body">
+        <h3>まるごと運用代行</h3>
+        <p>ホームページの更新、集客ブログ、アクセスの分析と改善提案まで、WEBまわりを丸ごと引き受けます。「本業に集中したい」方向けの、いわばWEB担当社員の外注です。</p>
+        <p class="teki">向いている方:作ったあとの運用まで任せたい経営者</p>
+      </div>
+      <dl class="price">
+        <dt>月額</dt><dd>3万円<small>(税別)</small></dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="monitor-box reveal">
+      <span class="han">先着三社限定</span>
+      <h2>実績づくりのため、<br>モニター価格でお受けします。</h2>
+      <p>新宮町内の事業者様で、制作事例とお客様の声のご協力をいただける方に限り。</p>
+      <p class="kakaku"><s>通常 35万円</s><b>15万円</b><small>(税別)</small></p>
+      <p class="joken">MEO対策の初期費用3万円も無料になります。始めたばかりの会社の、いちばん本気の3件です。手を抜く理由がありません。</p>
+      <a class="btn btn-shu" href="#shindan">モニターについて相談する</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="label" data-no="肆">ご依頼の流れ</p>
+    <h2>診断から始めるのが、いちばん損がない。</h2>
+    <div class="steps">
+      <div class="step reveal"><div class="n">一</div><div><h3>無料診断</h3><p>お店の名前を伺えば、検索結果・Googleマップ・ホームページの現状を調べ、15分で読めるレポートをお送りします。</p></div></div>
+      <div class="step reveal"><div class="n">二</div><div><h3>ご提案</h3><p>診断をもとに「やるべき順番」と金額を提示します。不要なら不要と言います。ここまで一円もかかりません。</p></div></div>
+      <div class="step reveal"><div class="n">三</div><div><h3>制作・設定</h3><p>ご契約後、ヒアリングをして制作と設定を進めます。途中経過は随時お見せします。</p></div></div>
+      <div class="step reveal"><div class="n">四</div><div><h3>毎月の報告</h3><p>公開して終わりにしません。「調べた人が先月より何人増えたか」を、専門用語なしで毎月報告します。</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="wrap">
+    <p class="label" data-no="伍">よくあるご質問</p>
+    <h2>気になることには、先に答えておきます。</h2>
+    <details>
+      <summary>パソコンが苦手でも大丈夫ですか。</summary>
+      <p>大丈夫です。むしろそういう方のための仕事です。専門用語を使った時点で私の負けだと思っています。面倒な作業はすべてこちらで行います。</p>
+    </details>
+    <details>
+      <summary>あとから追加料金を請求されませんか。</summary>
+      <p>されません。お見積りにない費用を後から請求することはありません。ドメイン代など実費が必要な場合も、契約前にすべて金額を出します。</p>
+    </details>
+    <details>
+      <summary>効果はどれくらいで出ますか。</summary>
+      <p>Googleマップ対策は早ければ1〜2ヶ月で閲覧数に変化が出始めます。検索対策は3〜6ヶ月が目安です。途中経過は毎月の報告で必ずお見せします。出ていないときも、正直にそう書きます。</p>
+    </details>
+    <details>
+      <summary>途中でやめられますか。</summary>
+      <p>月額プランはいつでも解約できます。年間契約などの縛りは設けていません。縛らなくても続けたいと思っていただける仕事をするのが方針です。</p>
+    </details>
+  </div>
+</section>
+
+<section class="shindan" id="shindan">
+  <div class="wrap">
+    <p class="label" data-no="陸">無料WEB集客診断</p>
+    <h2>あなたのお店がいまWEBで<br>どう見えているか、調べます。</h2>
+    <p class="lead">お店の名前と業種を送っていただくだけ。検索結果・Googleマップ・ホームページの現状をこちらで調べて、15分で読めるレポートをお返しします。売り込みの返信は不要です。</p>
+    <div class="cta">
+      <a class="btn btn-shu" href="mailto:mikata@jixaijp.com?subject=無料WEB集客診断の申し込み&body=お店の名前:%0D%0A業種:%0D%0A地域:">メールで申し込む</a>
+    </div>
+    <p class="naiyou">宛先: mikata@jixaijp.com(お店の名前・業種・地域を書いて送るだけ)<br>診断後にしつこい営業はしません。レポートだけ受け取って終わり、で構いません。</p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="brand" href="#"><b>集客のミカタ</b><span>新宮町のWEB集客パートナー</span></a>
+    <p>対応エリア:福岡県糟屋郡新宮町・粕屋町・久山町・古賀市・福津市<br>© 集客のミカタ</p>
+  </div>
+</footer>
+
+<script>
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add("on"); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
