@@ -92,6 +92,9 @@
   .brand span { font-size: 11px; color: var(--ink-soft); letter-spacing: .08em; }
   @media (max-width: 520px) { .brand span { display: none; } }
   .nav .btn { padding: 9px 18px; font-size: 13px; }
+  .nav-links { display: flex; align-items: center; gap: 18px; }
+  .nav-links .textlink { text-decoration: none; font-size: 13px; font-weight: 700; color: var(--ink); }
+  .nav-links .textlink:hover { color: var(--shu); }
 
   /* ヒーロー: 左寄せ・縦書きアクセント */
   .hero { padding: 84px 0 72px; border-bottom: 1px solid var(--line); position: relative; overflow: hidden; }
@@ -225,7 +228,10 @@
 <header>
   <div class="wrap nav">
     <a class="brand" href="#"><b>集客のミカタ</b><span>新宮町のWEB集客パートナー</span></a>
-    <a class="btn btn-shu" href="#shindan">無料診断</a>
+    <div class="nav-links">
+      <a class="textlink" href="blog/">コラム</a>
+      <a class="btn btn-shu" href="#shindan">無料診断</a>
+    </div>
   </div>
 </header>
 
@@ -394,7 +400,7 @@
 <footer>
   <div class="wrap">
     <a class="brand" href="#"><b>集客のミカタ</b><span>新宮町のWEB集客パートナー</span></a>
-    <p>対応エリア:福岡県糟屋郡新宮町・粕屋町・久山町・古賀市・福津市<br>© 集客のミカタ</p>
+    <p>対応エリア:福岡県糟屋郡新宮町・粕屋町・久山町・古賀市・福津市 / <a href="blog/" style="color:#9fb0aa;">新宮町の集客コラム</a><br>© 集客のミカタ</p>
   </div>
 </footer>
 
